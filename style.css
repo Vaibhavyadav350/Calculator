@@ -4,6 +4,7 @@ body {
     display: flex;
     height: 100vh;
     justify-content: center;
+    grid-template-columns: 200px;
   }
   
   .element {
@@ -12,6 +13,7 @@ body {
     border-radius: 10px;
     height: 80px;
     justify-content: center;
+
     width: 80px;
   }
   
@@ -56,6 +58,11 @@ body {
       border: none;
       outline: none;
 
+  }
+  @media (min-width: 600px) {
+    body {
+      grid-template-columns: 200px 200px;
+    }
   }
 
 
